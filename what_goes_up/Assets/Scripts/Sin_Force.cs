@@ -13,6 +13,7 @@ public class Sin_Force : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position = _startPosition + new Vector3(Mathf.Sin(Time.time) * 2, 0.0f, 0.0f);
+        transform.position = _startPosition + new Vector3(Mathf.Sin(Time.time), 0.0f, 0.0f);
+        //transform.Rotate(0.0f, 0.0f, Mathf.Lerp(-1, 1, 1)); 
     }
 }

@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Leaf : MonoBehaviour
+public class LeafMotion : MonoBehaviour
 {
-    Vector2 position;
+    //Vector2 position;
     Vector2 velocity;
 
     // Use this for initialization
     void Start()
     {
-        position = new Vector2();
+        //position = new Vector2();
         velocity = new Vector2(24, 0);
     }
 
@@ -23,6 +23,8 @@ public class Leaf : MonoBehaviour
 
         velocity = velocity.Rotate(rot);
 
+        Debug.Log(velocity); 
+
         if (velocity.y > 0)
             velocity += velocity.normalized * -1;
         else
@@ -32,5 +34,7 @@ public class Leaf : MonoBehaviour
             velocity = velocity.Rotate(-0.02f);
         else if (Input.GetKeyDown(KeyCode.RightArrow))
             velocity = velocity.Rotate(0.02f);
+
+        GetComponent<Rigidbody2D>().velocity = velocity; 
     }
 }
