@@ -16,4 +16,15 @@ public static class VecExtensions
 
         return new Vector2(x, y);
     }
+
+    public static float Get_Delta(this Vector2 vec, Vector2 other)
+    {
+        float dot = vec.x * other.x + vec.y + other.y;
+        float abs = (float)Math.Acos(dot / vec.magnitude / other.magnitude);
+        if (vec.y * other.x > vec.x * other.y)
+        {
+            return -1 * abs; 
+        }
+        return abs; 
+    }
 }
