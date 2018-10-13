@@ -11,7 +11,8 @@ public class Leaf_Dynamic : MonoBehaviour {
     private float rotation = .002f;
 
     private Vector2 upwards = Vector2.up;
-    private Vector2 rot = new Vector2(1, 0); 
+    private Vector2 rot = new Vector2(1, 0);
+    private Vector2 vel; 
 
 
     // Use this for initialization
@@ -19,14 +20,13 @@ public class Leaf_Dynamic : MonoBehaviour {
 
         //Vector2 curPos = transform.position; 
         //Vector2 rotation = new Vector2(transform.rotation.x, 0); 
-        GetComponent<Rigidbody2D>().velocity = new Vector2(12, 0); 
+        vel = new Vector2(12, 0); 
 
     }
 	
 	// Update is called once per frame
 	void Update () {
         Vector2 curPos = transform.position;
-        Vector2 vel = GetComponent<Rigidbody2D>().velocity;
         curPos += vel;
         curPos += new Vector2(0, -.5f);
 
@@ -63,7 +63,7 @@ public class Leaf_Dynamic : MonoBehaviour {
             vel *= drag; 
         }
 
-        GetComponent<Rigidbody2D>().position = curPos;
+        transform.position = curPos; 
         //GetComponent<Rigidbody2D>().rotation = rot;
 
         Debug.Log("Velocity: " + vel); 
