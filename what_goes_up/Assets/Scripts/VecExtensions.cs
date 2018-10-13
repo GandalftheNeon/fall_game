@@ -14,6 +14,6 @@ public static class VecExtensions
         var x = (cos * vec.x) - (sin * vec.y);
         var y = (sin * vec.x) + (cos * vec.y);
 
-        return vec;
+        return new Vector2(x, y);
     }
 }
