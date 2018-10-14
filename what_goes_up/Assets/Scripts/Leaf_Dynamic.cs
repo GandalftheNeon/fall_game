@@ -35,16 +35,13 @@ public class Leaf_Dynamic : MonoBehaviour
     void Update()
     {
         Vector2 curPos = transform.position;
-        curPos += vel;
+        curPos += vel/100.0f;
         //curPos += new Vector2(0, -.5f);
 
         float delta = vel.Get_Delta(upwards) / (Mathf.PI / 2.0f);
         delta *= vel.magnitude * rotation;
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-            delta -= controls;
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
-            delta += controls;
+        delta += (Input.GetAxis("Horizontal") * controls); 
 
         vel = Polar(vel.magnitude, Mathf.Atan2(vel.y, vel.x) + delta);
         upwards = Polar(1, Mathf.Atan2(upwards.y, upwards.x) + delta);
@@ -69,6 +66,10 @@ public class Leaf_Dynamic : MonoBehaviour
             vel *= drag;
         }
 
+        //Debug.Log(vel); 
+        Debug.Log(rot); 
+
         transform.position = curPos;
+        //transform.rotation = new Quaternion(0, 0, delta, 1); 
     }
 }

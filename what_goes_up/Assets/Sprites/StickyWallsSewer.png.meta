@@ -1,19 +1,15 @@
 fileFormatVersion: 2
-guid: 6492476c52db04b43b7fd909cd29f400
+guid: 9903d697857ec2c45b8dead94c547977
 TextureImporter:
   fileIDToRecycleName:
-    21300000: SewerTileset_0
-    21300002: SewerTileset_1
-    21300004: SewerTileset_2
-    21300006: SewerTileset_3
-    21300008: SewerTileset_4
-    21300010: SewerTileset_5
-    21300012: SewerTileset_6
-    21300014: SewerTileset_7
-    21300016: SewerTileset_8
-    21300018: SewerTileset_9
-    21300020: SewerTileset_10
-    21300022: SewerTileset_11
+    21300000: StickyWallsSewer_0
+    21300002: StickyWallsSewer_1
+    21300004: StickyWallsSewer_2
+    21300006: StickyWallsSewer_3
+    21300008: StickyWallsSewer_4
+    21300010: StickyWallsSewer_5
+    21300012: StickyWallsSewer_6
+    21300014: StickyWallsSewer_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -85,7 +81,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: 7
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -118,13 +114,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SewerTileset_0
+      name: StickyWallsSewer_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
-        width: 32
-        height: 32
+        y: 24
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,19 +128,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9c6915b2d05de74f805d7c68b573ff8
+      spriteID: bfa3e980c216ec849837b0fbda70c90f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SewerTileset_1
+      name: StickyWallsSewer_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
+        x: 8
+        y: 24
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,39 +148,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9485c90247313944aa8c6abd0a54dff6
+      spriteID: 9fdc82063a8279341bcd37050e39ec28
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SewerTileset_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5f332a44865140d4eac6e0fcc4979989
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SewerTileset_3
+      name: StickyWallsSewer_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 32
-        height: 32
+        y: 16
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,19 +168,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2186a4fed4d6f6b4194a22f2d656fe68
+      spriteID: 278f27e4f904f8d41b769c2d0c8035b9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SewerTileset_4
+      name: StickyWallsSewer_3
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
+        x: 8
+        y: 16
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,39 +188,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad9a8effc74942e4e88ff6940b9f8e1e
+      spriteID: 1040ed9430938bd408ec25bafc5e0225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SewerTileset_5
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7e07532264cf34649b660341b5873b48
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SewerTileset_6
+      name: StickyWallsSewer_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 32
-        height: 32
+        y: 8
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,19 +208,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81595861910d4d14987195c34c711e38
+      spriteID: 85d334406128f29488c6918df9d807ac
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SewerTileset_7
+      name: StickyWallsSewer_5
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
+        x: 8
+        y: 8
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,39 +228,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b7bcf5ad7d07454cbad773c4b815ec0
+      spriteID: 8823551d43b964c4a94ac144b8a0edbd
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SewerTileset_8
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a3654acd08df9c41a3b2adab4f1aa36
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SewerTileset_9
+      name: StickyWallsSewer_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,19 +248,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4bc98a169bb03042ad45549ae854eba
+      spriteID: 0a8ef2fa56b114a4eb1aadde689fa97c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SewerTileset_10
+      name: StickyWallsSewer_7
       rect:
         serializedVersion: 2
-        x: 32
+        x: 8
         y: 0
-        width: 32
-        height: 32
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,27 +268,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e525005f396b0ca4791a63b0f87d2da3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SewerTileset_11
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44c2e461f48f241409a61927a34846d2
+      spriteID: f25838302b5bc614d8d4a157596398f8
       vertices: []
       indices: 
       edges: []
@@ -360,7 +276,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 30d1df2139f655c4cabf3264c386d82d
+    spriteID: 2aaaf69f3de112e4b8a94be8ac03dd35
     vertices: []
     indices: 
     edges: []
